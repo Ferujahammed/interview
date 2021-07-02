@@ -29,10 +29,10 @@ function Home() {
       return true;
     });
   });
-  console.log(allsizes);
+  // console.log(allsizes);
 
   let sizes = allsizes.filter((item, index, array) => array.indexOf(item) === index);
-  console.log(sizes);
+  // console.log(sizes);
 
   let nums = sizes
     .filter((number) => parseInt(number) === number * 1)

@@ -11,7 +11,7 @@ const Myprovider = (props) => {
     useEffect(() => {
         const getData = async () => {
           const response = await axios.get(
-            "/fid-recruiting/fid-task-4-ffront-products.json", {headers: {"Access-Control-Allow-Origin": "https://s3-eu-west-1.amazonaws.com"}}
+            "/fid-recruiting/fid-task-4-ffront-products.json", {headers: {"Access-Control-Allow-Origin": "https://frontend-gyjg597vc-ferujahammed.vercel.app"}}
           );
           setProducts((response.data).sort((a, b) => (a.brand > b.brand ? 1 : -1)))
         };
